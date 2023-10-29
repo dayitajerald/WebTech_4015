@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            color: white;
+            font-size: 25px;
+        }
+        #submitt{
+            background-color: #18122B;
+            border: none;
+            color: white;
+            border-radius: 10px;
+            cursor: pointer;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            padding-left: 50px;
+            padding-right: 50px;
+            margin-left: 4px;
+            margin-right: 4px;
+            font-weight: bold;
+        }
+
+    </style>
+    <script>
+        function validateFileInput() {
+            const fileInput = document.getElementById('myfile');
+            const errorDisplay = document.getElementById('errorDisplay');
+
+            // Reset previous error messages
+            errorDisplay.innerHTML = '';
+
+            if (fileInput.files.length === 0) {
+                errorDisplay.innerHTML = '<p class="error">Please select a file.</p>';
+                return false;
+            }
+            
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <h3>Upload your Document for proof of identity:</h3>
+    <form  method="get" onsubmit="return validateFileInput();">
+        <label for="myfile">Select a file:</label>
+        <input type="file" id="myfile" name="myfile"><br><br><br>
+        <input type="submit" value="Submit" id="submitt" >
+    </form>
+    <div id="errorDisplay"></div>
+</body>
+</html>

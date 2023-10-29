@@ -1,0 +1,51 @@
+<!-- Event Handling -->
+<!DOCTYPE html>
+<html>
+     <head>
+         <title>Event Handling mechanism</title>
+<style>
+    body{
+        color: white;
+       font-size: 25px;
+    }
+</style>
+        <script type="text/javascript">
+            function validateform()
+               {  
+                    var uname=document.myform.name.value;  
+                    var upassword=document.myform.password.value;  
+                    var uemail=document.myform.email.value;
+                    var date = document.myform.startdate.value;
+                    year = date
+                    console.log(date);
+                    if (uname==null || uname=="")
+                    {  
+                         alert("Name cannot be left blank");  
+                         return false;  
+                    }
+                    else if(upassword.length<6)
+                    {  
+                         alert("Password must be at least 6 characters long.");  
+                         return false;  
+                    }  
+                    else if (uemail.indexOf("@")==-1)
+                    {
+                         alert("Please enter valid email address")
+                         return false;
+                    }
+               }  
+        </script>
+     </head>
+
+    <body><!-- onload="time()"> -->
+        <center>
+            <form name="myform" method="post" action="#" onsubmit="return validateform()">  
+                Email: <input type="text" size="20" name="email"><br /><br />
+                User Name: <input type="text" name="name"><br /><br />  
+                Password: <input type="password" name="password"><br /><br />  
+                Start Date: <input type="date" name="startdate"  min="2023-01-01" max="2023-12-31" ><br /><br />  
+                <input type="submit" value="Submit" >  
+            </form>  
+        </center>
+    </body>
+</html>
