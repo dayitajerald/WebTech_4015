@@ -1,0 +1,25 @@
+
+<web-app>
+
+    <servlet>
+        <servlet-name>SpaceFactsServlet</servlet-name>
+        <servlet-class>SpaceFactsServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>SpaceFactsServlet</servlet-name>
+        <url-pattern>/spacefacts</url-pattern>
+    </servlet-mapping>
+
+        <servlet>
+        <servlet-name>SpaceFormPrint</servlet-name>
+        <servlet-class>SpaceFormPrint</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>SpaceFormPrint</servlet-name>
+        <url-pattern>/spaceprintform</url-pattern>
+    </servlet-mapping>
+
+
+</web-app>
