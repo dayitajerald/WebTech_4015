@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database Connectivity</title>
+</head>
+<body>
+    <h1>Mission List</h1><hr>    
+    <!--Invoke marklist1 servlet to display all the students' marks-->
+    <a href="http://localhost:8080/ServletEx7/db1">Display all Missions</a>
+    <hr>
+    <!-- On submit invoke marklist2 servlet to display mark details of specific dept students-->
+    <h3>View Mission Specific Details</h3>
+    <form action="http://localhost:8080/ServletEx7/db2">
+        <!--Drop down selection-->
+        <label for="purpose">Purpose</label>
+        <select id="purpose" name="purpose">
+        <option value="empty">--</option>
+        <option value="Communication">COMMUNICATION</option>
+        <option value="Research">RESEARCH</option>
+        <option value="Experimentation">EXPERIMENTATION</option>
+        <option value="Other">OTHER</option>
+        <br>
+        <br>
+        <input type="submit" value="SUBMIT"/>
+    </form>
+    <h2>Insert Data into DB</h2>
+    <form action="http://localhost:8080/ServletEx7/db3" method="post">
+        <p>Mission ID:</p> 
+        <!-- Create an element with mandatory name attribute,
+        so that data can be transfer to the servlet using getParameter() -->
+        <input type="number" name="m_id"/>
+        <p>Mission Name:</p> 
+        <input type="text" name="m_name"/>
+        <p>
+        <label for="m_purpose">Mission Purpose:</label>
+        <select id="m_purpose" name="m_purpose">
+        <option value="empty">--</option>
+        <option value="Communication">COMMUNICATION</option>
+        <option value="Research">RESEARCH</option>
+        <option value="Experimentation">EXPERIMENTATION</option>
+        <option value="Other">OTHER</option>
+        </select>
+        </p>
+        <p>Mission Leader:</p> 
+        <input type="text" name="m_leader"/>
+        <p>Mission Details:</p> 
+        <input type="text" name="m_details"/>
+        <p>Mission Date:</p> 
+        <input type="date" name="m_date"/>
+
+        <input type="submit"/>
+    </form>
+</body>
+</html>
