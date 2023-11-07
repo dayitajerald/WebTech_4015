@@ -1,0 +1,19 @@
+
+<html>
+<head>
+    <title>Hidden Form Fields</title>
+</head>
+<body>
+    <h2>Space Session Management</h2>
+    <form action="SpaceHidden" method="post">
+        <input type="hidden" name="userLocation" value="Space Station Alpha">
+        <input type="hidden" name="userActive" value="Yes">
+
+        <!-- Other visible form fields -->
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

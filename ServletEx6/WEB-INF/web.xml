@@ -1,0 +1,73 @@
+
+<web-app>
+
+    <servlet>
+        <servlet-name>SpaceCookie1</servlet-name>
+        <servlet-class>SpaceCookieServlet1</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SpaceCookie1</servlet-name>
+        <url-pattern>/SpaceCookie1</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SpaceCookie2</servlet-name>
+        <servlet-class>SpaceCookieServlet2</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SpaceCookie2</servlet-name>
+        <url-pattern>/SpaceCookie2</url-pattern>
+    </servlet-mapping>
+
+
+     <servlet>
+        <servlet-name>SpaceHidden</servlet-name>
+        <servlet-class>SpaceHiddenServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SpaceHidden</servlet-name>
+        <url-pattern>/SpaceHidden</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>Spaceurl1</servlet-name>
+        <servlet-class>SpaceURLServlet1</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Spaceurl1</servlet-name>
+        <url-pattern>/Spaceurl1</url-pattern>
+    </servlet-mapping>
+
+
+
+<!-- Servlet mappings -->
+    <servlet>
+        <servlet-name>SpaceLoginServlet</servlet-name>
+        <servlet-class>SpaceLoginServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SpaceSessionInfoServlet</servlet-name>
+        <servlet-class>SpaceSessionInfoServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SpaceSessionInfoServlet2</servlet-name>
+        <servlet-class>SpaceSessionInfoServlet2</servlet-class>
+    </servlet>
+    
+    <!-- Servlet URL mappings -->
+    <servlet-mapping>
+        <servlet-name>SpaceLoginServlet</servlet-name>
+        <url-pattern>/SpaceLoginServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SpaceSessionInfoServlet</servlet-name>
+        <url-pattern>/SpaceSessionInfoServlet</url-pattern>
+    </servlet-mapping>
+        <servlet-mapping>
+        <servlet-name>SpaceSessionInfoServlet2</servlet-name>
+        <url-pattern>/SpaceSessionInfoServlet2</url-pattern>
+    </servlet-mapping>
+
+
+</web-app>
