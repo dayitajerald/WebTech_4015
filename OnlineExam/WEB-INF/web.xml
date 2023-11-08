@@ -1,0 +1,36 @@
+<web-app>
+    <servlet>
+      <servlet-name>LoginExam</servlet-name>
+      <servlet-class>LoginExam</servlet-class>
+    </servlet>
+
+
+    <servlet-mapping>
+        <servlet-name>LoginExam</servlet-name>
+        <url-pattern>/loginexam</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+      <servlet-name>AccessExam</servlet-name>
+      <servlet-class>AccessExam</servlet-class>
+    </servlet>
+
+
+    <servlet-mapping>
+        <servlet-name>AccessExam</servlet-name>
+        <url-pattern>/accessexam</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+      <servlet-name>EvaluationExam</servlet-name>
+      <servlet-class>EvaluationExam</servlet-class>
+    </servlet>
+
+
+    <servlet-mapping>
+        <servlet-name>EvaluationExam</servlet-name>
+        <url-pattern>/evaluationexam</url-pattern>
+    </servlet-mapping>
+</web-app>
